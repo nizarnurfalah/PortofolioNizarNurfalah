@@ -250,12 +250,18 @@ export default function FullWidthTabs() {
               minHeight: "72px",
               width: "100%",
               "& .MuiTabs-scroller": {
-                display: "flex",
-                justifyContent: "center",
+                display: { xs: "block", md: "flex" },
+                justifyContent: { xs: "flex-start", md: "center" },
               },
               "& .MuiTabs-flexContainer": {
-                justifyContent: "center",
-                width: "100%",
+                justifyContent: { xs: "flex-start", md: "center" },
+                minWidth: { xs: "max-content", md: "100%" },
+              },
+              "& .MuiTabScrollButton-root": {
+                color: "#c084fc",
+                "&.Mui-disabled": {
+                  opacity: 0.2,
+                },
               },
               "& .MuiTab-root": {
                 fontSize: { xs: "0.85rem", md: "0.95rem" },

@@ -273,28 +273,44 @@ const AboutPage = () => {
                 <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Download CV
               </button>
               </a>
-              <a href="#Portofolio" className="w-full lg:w-auto">
               <button 
+                onClick={() => {
+                  const section = document.querySelector("#Portofolio");
+                  if (section) {
+                    window.scrollTo({
+                      top: section.offsetTop - 80,
+                      behavior: "smooth"
+                    });
+                  }
+                }}
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg border border-[#a855f7]/50 text-[#a855f7] font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 hover:bg-[#a855f7]/10 "
               >
                 <Code className="w-4 h-4 sm:w-5 sm:h-5" /> View Projects
               </button>
-              </a>
             </div>
           </div>
 
           <ProfileImage />
         </div>
 
-        <a href="#Portofolio">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 cursor-pointer">
-            {statsData.map((stat) => (
-              <StatCard key={stat.label} {...stat} />
-            ))}
-          </div>
-        </a>
+        <div 
+          onClick={() => {
+            const section = document.querySelector("#Portofolio");
+            if (section) {
+              window.scrollTo({
+                top: section.offsetTop - 80,
+                behavior: "smooth"
+              });
+            }
+          }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 cursor-pointer"
+        >
+          {statsData.map((stat) => (
+            <StatCard key={stat.label} {...stat} />
+          ))}
+        </div>
       </div>
 
       <style jsx>{`
