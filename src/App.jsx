@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import React, { useState, lazy, Suspense } from "react";
 import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
@@ -63,7 +63,7 @@ function App() {
       <div className="pointer-events-none">
   <AnimatedBackground />
 </div>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           {/* PUBLIC */}
           <Route
@@ -101,7 +101,7 @@ function App() {
             }
           />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </HelmetProvider>
   );
 }
