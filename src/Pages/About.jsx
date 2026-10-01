@@ -50,7 +50,7 @@ const ProfileImage = memo(() => (
           <div className="absolute inset-0 bg-gradient-to-t from-purple-500/20 via-transparent to-blue-500/20 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 hidden sm:block" />
           
           <img
-            src="/images/foto_muka.jpg"
+            src={`${import.meta.env.BASE_URL}images/foto_muka.jpg`}
             alt="Muhamad Nizar Nurfalah"
             className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
             style={{ objectPosition: "center 28%" }}

@@ -1,9 +1,11 @@
+const BASE = import.meta.env.BASE_URL;
+
 export const INITIAL_PROJECTS = [
   {
     id: "webgis-longsor-kuningan",
     Title: "WebGIS Pemetaan Rawan Longsor Kabupaten Kuningan",
     Description: "Sistem Informasi Geografis (WebGIS) interaktif berbasis web untuk pemetaan, analisis zonasi kerawanan, dan visualisasi spasial bencana longsor di Kabupaten Kuningan.",
-    Img: "/images/thumbnail project 1.jpg",
+    Img: `${BASE}images/thumbnail project 1.jpg`,
     Link: "https://nizarnurfalah.github.io/webgis_longsor_kuningan/",
     Github: "https://github.com/nizarnurfalah/webgis_longsor_kuningan",
     TechStack: ["Leaflet", "JavaScript", "HTML", "CSS", "WebGIS"],
@@ -18,7 +20,7 @@ export const INITIAL_PROJECTS = [
     id: "perhitungan-pipa",
     Title: "Aplikasi Kalkulator Perhitungan Pipa Teknis",
     Description: "Aplikasi simulasi dan kalkulator teknik berbasis web untuk menghitung dimensi pipa, kecepatan laju aliran fluida, serta analisis kerugian tekanan (headloss).",
-    Img: "/images/thumbnail project 2.jpg",
+    Img: `${BASE}images/thumbnail project 2.jpg`,
     Link: "https://nizarnurfalah.github.io/PerhitunganPipa/",
     Github: "https://github.com/nizarnurfalah/PerhitunganPipa",
     TechStack: ["JavaScript", "HTML", "CSS", "Engineering Tools"],
@@ -33,7 +35,7 @@ export const INITIAL_PROJECTS = [
     id: "jadwal-theater-unisba",
     Title: "Website Jadwal & Informasi Teater Unisba",
     Description: "Platform web interaktif informasi jadwal pementasan teater Unisba, katalog pertunjukan seni, pendaftaran acara, serta rincian kegiatan teater.",
-    Img: "/images/thumbnail project 3.jpg",
+    Img: `${BASE}images/thumbnail project 3.jpg`,
     Link: "https://nizarnurfalah.github.io/jadwaltheaterunisba/",
     Github: "https://github.com/nizarnurfalah/jadwaltheaterunisba",
     TechStack: ["JavaScript", "HTML", "CSS", "Bootstrap", "Web App"],
@@ -51,73 +53,73 @@ export const INITIAL_CERTIFICATES = [
     id: 1,
     Title: "Introduction to Information Security",
     Issuer: "Great Learning Academy",
-    Img: "/images/Certificate-of-Completion-Introduction-to-Information-Security_page-0001.jpg"
+    Img: `${BASE}images/Certificate-of-Completion-Introduction-to-Information-Security_page-0001.jpg`
   },
   {
     id: 2,
     Title: "AWS Cloud & Security Fundamentals",
     Issuer: "Amazon Web Services Training",
-    Img: "/images/Certificate_Of_Completion-AWSSecurity1639-6617d0b8686fc11c6e4bde60.png"
+    Img: `${BASE}images/Certificate_Of_Completion-AWSSecurity1639-6617d0b8686fc11c6e4bde60.png`
   },
   {
     id: 3,
     Title: "Analytics Fundamentals",
     Issuer: "Google Analytics Academy",
-    Img: "/images/Certificate_Of_Completion-AnalyticsFundamentals-6617d5b2686fc11c6e4bdf52.png"
+    Img: `${BASE}images/Certificate_Of_Completion-AnalyticsFundamentals-6617d5b2686fc11c6e4bdf52.png`
   },
   {
     id: 4,
     Title: "Python and Blockchain: The Complete Guide",
     Issuer: "Udemy / Online Professional",
-    Img: "/images/Certificate_Of_Completion-LearnaboutPythonandBlockchainTheCompleteGuide-6617d4cf686fc11c6e4bdf0f.png"
+    Img: `${BASE}images/Certificate_Of_Completion-LearnaboutPythonandBlockchainTheCompleteGuide-6617d4cf686fc11c6e4bdf0f.png`
   },
   {
     id: 5,
     Title: "Let's Talk Security: Salted Password & Auth",
     Issuer: "Cybersecurity Certification",
-    Img: "/images/Certificate_Of_Completion-LetstalksecuritySaltedpassword-6617cf92686fc11c6e4bde52.png"
+    Img: `${BASE}images/Certificate_Of_Completion-LetstalksecuritySaltedpassword-6617cf92686fc11c6e4bde52.png`
   },
   {
     id: 6,
     Title: "Spring Boot Security Mastery",
     Issuer: "Software Development Course",
-    Img: "/images/Certificate_Of_Completion-Springbootsecuritycourse-6617d08d686fc11c6e4bde59.png"
+    Img: `${BASE}images/Certificate_Of_Completion-Springbootsecuritycourse-6617d08d686fc11c6e4bde59.png`
   },
   {
     id: 7,
     Title: "Talent Pavilion FinTech 101 Course",
     Issuer: "Talent Pavilion",
-    Img: "/images/Certificate_Of_Completion-TalentPavilionFinTech101Course-6617d310686fc11c6e4bde8b.png"
+    Img: `${BASE}images/Certificate_Of_Completion-TalentPavilionFinTech101Course-6617d310686fc11c6e4bde8b.png`
   },
   {
     id: 8,
     Title: "Sertifikasi Kompetensi Sistem Informasi",
     Issuer: "STMIK AMIK Bandung",
-    Img: "/images/2241405.2024.2.SI20409.7.1e98d3d47e5bbeee1c842cf022e09ace_page-0001.jpg"
+    Img: `${BASE}images/2241405.2024.2.SI20409.7.1e98d3d47e5bbeee1c842cf022e09ace_page-0001.jpg`
   },
   {
     id: 9,
     Title: "Sertifikat Pelatihan & Keahlian Digital",
     Issuer: "Lembaga Sertifikasi Nasional",
-    Img: "/images/X5373661570267a27cdedcd88a7de2480_copy_page-0001.jpg"
+    Img: `${BASE}images/X5373661570267a27cdedcd88a7de2480_copy_page-0001.jpg`
   },
   {
     id: 10,
     Title: "Sertifikat Magang Humas & Publikasi",
     Issuer: "Diskominfo Kota Bandung",
-    Img: "/images/WhatsApp Image 2026-10-01 at 14.36.52.jpeg"
+    Img: `${BASE}images/WhatsApp Image 2026-10-01 at 14.36.52.jpeg`
   },
   {
     id: 11,
     Title: "Sertifikat Drafter & Desain Teknis Telekomunikasi",
     Issuer: "PT Nexwave",
-    Img: "/images/WhatsApp Image 2026-10-01 at 14.36.53.jpeg"
+    Img: `${BASE}images/WhatsApp Image 2026-10-01 at 14.36.53.jpeg`
   },
   {
     id: 12,
     Title: "Piagam Penghargaan & Kontribusi Khusus",
     Issuer: "Program Magang Industri",
-    Img: "/images/WhatsApp Image 2026-10-01 at 14.39.43.jpeg"
+    Img: `${BASE}images/WhatsApp Image 2026-10-01 at 14.39.43.jpeg`
   }
 ];
 
@@ -300,7 +302,7 @@ export const AUTOCAD_PROJECTS = [
     title: "Cianjur Leberan Expansion SID",
     category: "Site Expansion SID",
     description: "Perancangan gambar blueprint SID untuk ekspansi struktur penempatan antena dan shelter perangkat operator seluler di Cianjur.",
-    pdfUrl: "/autocad/13CJR0456_LBRN_EXP_SID.pdf"
+    pdfUrl: `${BASE}autocad/13CJR0456_LBRN_EXP_SID.pdf`
   },
   {
     id: "13CJR0474",
@@ -308,7 +310,7 @@ export const AUTOCAD_PROJECTS = [
     title: "Cianjur Non-Macro New SID",
     category: "Non-Macro SID",
     description: "Technical drafting untuk instalasi site non-macro baru mencakup diagram layout tiang, fondasi, dan rute perkabelan.",
-    pdfUrl: "/autocad/13CJR0474_NONM_NEW_SID.pdf"
+    pdfUrl: `${BASE}autocad/13CJR0474_NONM_NEW_SID.pdf`
   },
   {
     id: "13CJR0506",
@@ -316,7 +318,7 @@ export const AUTOCAD_PROJECTS = [
     title: "Cianjur Q2 Pole Project New",
     category: "Pole Project Q2",
     description: "Dokumen teknis rancang bangun monopole baru Q2 project dengan spesifikasi load bearing and wind resistance.",
-    pdfUrl: "/autocad/13CJR0506_Q2PP_NEW.pdf"
+    pdfUrl: `${BASE}autocad/13CJR0506_Q2PP_NEW.pdf`
   },
   {
     id: "13GRT0422",
@@ -324,7 +326,7 @@ export const AUTOCAD_PROJECTS = [
     title: "Garut PPQ2 New Site Infrastructure",
     category: "Monopole Design",
     description: "Gambar kerja konstruksi menara monopole area Garut dengan tata letak kabinet ground and power distribution.",
-    pdfUrl: "/autocad/13GRT0422_PPQ2_NEW.pdf"
+    pdfUrl: `${BASE}autocad/13GRT0422_PPQ2_NEW.pdf`
   },
   {
     id: "13PLR0597",
@@ -332,7 +334,7 @@ export const AUTOCAD_PROJECTS = [
     title: "Plered Q2 Pole Project 0597",
     category: "Pole Infrastructure",
     description: "Pemetaan detail cross-section tiang telekomunikasi dan bracket antena sektoral untuk cakupan area Plered.",
-    pdfUrl: "/autocad/13PLR0597_Q2PP_NEW.pdf"
+    pdfUrl: `${BASE}autocad/13PLR0597_Q2PP_NEW.pdf`
   },
   {
     id: "13PLR0600",
@@ -340,7 +342,7 @@ export const AUTOCAD_PROJECTS = [
     title: "Plered Q2 Pole Project 0600",
     category: "Site Construction",
     description: "Blueprint teknis fondasi beton bertulang dan elevasi ketinggian antena telekomunikasi site Plered 0600.",
-    pdfUrl: "/autocad/13PLR0600_Q2PP_NEW.pdf"
+    pdfUrl: `${BASE}autocad/13PLR0600_Q2PP_NEW.pdf`
   },
   {
     id: "ZBDG_4722",
@@ -348,7 +350,7 @@ export const AUTOCAD_PROJECTS = [
     title: "Zone Bandung Site 4722 Urban Layout",
     category: "Urban Site",
     description: "Rancangan gambar kerja penempatan perangkat telekomunikasi di area padat perkotaan zona Bandung.",
-    pdfUrl: "/autocad/ZBDG_4722.pdf"
+    pdfUrl: `${BASE}autocad/ZBDG_4722.pdf`
   },
   {
     id: "ZBDG_6234",
@@ -356,7 +358,7 @@ export const AUTOCAD_PROJECTS = [
     title: "Zone Bandung Site 6234 Rooftop Mount",
     category: "Rooftop Integration",
     description: "Desain teknis perkuatan struktur rooftop, dudukan pole antena, dan tray kabel feeder zona Bandung.",
-    pdfUrl: "/autocad/ZBDG_6234.pdf"
+    pdfUrl: `${BASE}autocad/ZBDG_6234.pdf`
   },
   {
     id: "ZBDG_6379",
@@ -364,7 +366,7 @@ export const AUTOCAD_PROJECTS = [
     title: "Zone Bandung Site 6379 As-Built Drawing",
     category: "As-Built Drawing",
     description: "Dokumentasi as-built drawing verifikasi dimensi fisik dan tata letak eksisting perangkat site telekomunikasi.",
-    pdfUrl: "/autocad/ZBDG_6379.pdf"
+    pdfUrl: `${BASE}autocad/ZBDG_6379.pdf`
   },
   {
     id: "ZBDG_6380",
@@ -372,7 +374,7 @@ export const AUTOCAD_PROJECTS = [
     title: "Zone Bandung Site 6380 Azimuth Plan",
     category: "Azimuth & Height Plan",
     description: "Blueprint konfigurasi arah azimuth antena sektoral, kemiringan tilt, dan proteksi grounding site Bandung.",
-    pdfUrl: "/autocad/ZBDG_6380.pdf"
+    pdfUrl: `${BASE}autocad/ZBDG_6380.pdf`
   }
 ];
 

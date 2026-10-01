@@ -144,14 +144,8 @@ export default function FullWidthTabs() {
   useEffect(() => {
     localStorage.setItem("projects", JSON.stringify(INITIAL_PROJECTS));
     setProjects(INITIAL_PROJECTS);
-
-    const cachedCertificates = localStorage.getItem("certificates");
-    if (!cachedCertificates || JSON.parse(cachedCertificates).length === 0) {
-      localStorage.setItem("certificates", JSON.stringify(INITIAL_CERTIFICATES));
-      setCertificates(INITIAL_CERTIFICATES);
-    } else {
-      setCertificates(JSON.parse(cachedCertificates));
-    }
+    localStorage.setItem("certificates", JSON.stringify(INITIAL_CERTIFICATES));
+    setCertificates(INITIAL_CERTIFICATES);
 
     window.dispatchEvent(new Event("portfolioDataUpdated"));
   }, []);
