@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path d="M50 5L5 25v50l45 20 45-20V25L50 5z" fill="#FF2D20"/>
+  <path d="M50 5L5 25v50l45 20V5z" fill="#FF2D20" opacity="0.9"/>
+  <text x="50" y="62" font-family="Arial" font-weight="bold" font-size="30" fill="white" text-anchor="middle">L</text>
+</svg>
