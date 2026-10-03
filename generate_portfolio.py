@@ -800,7 +800,7 @@ html_content = f"""<!DOCTYPE html>
                         <div class="cover-tagline">Web Developer &bull; WebGIS Specialist &bull; Drafter &bull; Creative Media</div>
                         <div class="cover-contacts">
                             <span class="cover-contact-chip"><span class="icon">📍</span> Bandung, Jawa Barat</span>
-                            <span class="cover-contact-chip"><span class="icon">✉️</span> nizarbeet88@gmail.com</span>
+                            <span class="cover-contact-chip"><span class="icon">✉️</span> nizqrnurfalah@gmail.com</span>
                             <span class="cover-contact-chip"><span class="icon">💻</span> github.com/nizarnurfalah</span>
                             <span class="cover-contact-chip"><span class="icon">🔗</span> linkedin.com/in/muhamad-nizar-nurfalah</span>
                         </div>
@@ -1103,7 +1103,7 @@ html_content = f"""<!DOCTYPE html>
                 </div>
                 <div class="cta-right">
                     <div class="cta-name">Muhamad Nizar Nurfalah, S.Kom.</div>
-                    <div class="cta-email">nizarbeet88@gmail.com</div>
+                    <div class="cta-email">nizqrnurfalah@gmail.com</div>
                     <div class="cta-email">🌐 nizarnurfalah.github.io/PortofolioNizarNurfalah</div>
                 </div>
             </div>
