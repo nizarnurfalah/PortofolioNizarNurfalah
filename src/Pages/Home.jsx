@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, memo } from "react"
 import { Helmet } from "react-helmet-async"
-import { Github, Linkedin, Mail, ExternalLink, Instagram, Sparkles } from "lucide-react"
+import { Github, Linkedin, Mail, ExternalLink, Instagram, Sparkles, FileText } from "lucide-react"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -44,7 +44,7 @@ const TechStack = memo(({ tech }) => (
   </div>
 ));
 
-const CTAButton = memo(({ href, text, icon: Icon }) => {
+const CTAButton = memo(({ href, text, icon: Icon, download }) => {
   const handleClick = (e) => {
     if (href.startsWith("#")) {
       e.preventDefault();
@@ -59,7 +59,7 @@ const CTAButton = memo(({ href, text, icon: Icon }) => {
   };
 
   return (
-    <a href={href} onClick={handleClick} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined}>
+    <a href={href} download={download} onClick={handleClick} target={href.startsWith("http") || href.endsWith(".pdf") ? "_blank" : undefined} rel={href.startsWith("http") || href.endsWith(".pdf") ? "noopener noreferrer" : undefined}>
       <button className="group relative w-[160px]">
         <div className="absolute -inset-0.5 bg-gradient-to-r from-[#4f52c9] to-[#8644c5] rounded-xl opacity-50 blur-md group-hover:opacity-90 transition-all duration-700"></div>
         <div className="relative h-11 bg-[#030014] backdrop-blur-xl rounded-lg border border-white/10 leading-none overflow-hidden">
@@ -205,8 +205,9 @@ const Home = () => {
                   </div>
 
                   {/* CTA Buttons */}
-                  <div className="flex flex-row gap-3 w-full justify-start" data-aos="fade-up" data-aos-delay="1400">
+                  <div className="flex flex-wrap gap-3 w-full justify-start" data-aos="fade-up" data-aos-delay="1400">
                     <CTAButton href="#Portofolio" text="Projects" icon={ExternalLink} />
+                    <CTAButton href={`${import.meta.env.BASE_URL}Portofolio_Muhamad_Nizar_Nurfalah.pdf`} text="Portfolio (PDF)" icon={FileText} download="Portofolio_Muhamad_Nizar_Nurfalah.pdf" />
                     <CTAButton href="https://drive.google.com/file/d/1Dr2404O5tod8BUhcUtPOKi8qddklg-LT/view?usp=drive_link" text="Download CV" icon={ExternalLink} />
                   </div>
 

@@ -263,15 +263,24 @@ const AboutPage = () => {
         </blockquote>
       </div>
 
-            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              <a href="https://drive.google.com/file/d/1Dr2404O5tod8BUhcUtPOKi8qddklg-LT/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="w-full lg:w-auto">
-              <button 
-                data-aos="fade-up"
-                data-aos-duration="800"
-                className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 shadow-lg hover:shadow-xl "
-              >
-                <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Download CV
-              </button>
+            <div className="flex flex-col sm:flex-row flex-wrap items-center lg:items-start gap-3 w-full">
+              <a href={`${import.meta.env.BASE_URL}Portofolio_Muhamad_Nizar_Nurfalah.pdf`} download="Portofolio_Muhamad_Nizar_Nurfalah.pdf" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <button 
+                  data-aos="fade-up"
+                  data-aos-duration="700"
+                  className="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-medium text-sm transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 shadow-lg hover:shadow-purple-500/25"
+                >
+                  <FileText className="w-4 h-4" /> Download Portofolio (PDF)
+                </button>
+              </a>
+              <a href="https://drive.google.com/file/d/1Dr2404O5tod8BUhcUtPOKi8qddklg-LT/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <button 
+                  data-aos="fade-up"
+                  data-aos-duration="900"
+                  className="w-full sm:w-auto px-5 py-2.5 rounded-lg bg-white/10 hover:bg-white/15 text-white font-medium text-sm border border-white/20 transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
+                >
+                  <FileText className="w-4 h-4" /> Download CV
+                </button>
               </a>
               <button 
                 onClick={() => {
@@ -284,10 +293,10 @@ const AboutPage = () => {
                   }
                 }}
                 data-aos="fade-up"
-                data-aos-duration="1000"
-                className="w-full lg:w-auto sm:px-6 py-2 sm:py-3 rounded-lg border border-[#a855f7]/50 text-[#a855f7] font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center lg:justify-start gap-2 hover:bg-[#a855f7]/10 "
+                data-aos-duration="1100"
+                className="w-full sm:w-auto px-5 py-2.5 rounded-lg border border-[#a855f7]/50 text-[#a855f7] hover:text-white font-medium text-sm transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 hover:bg-[#a855f7]/20"
               >
-                <Code className="w-4 h-4 sm:w-5 sm:h-5" /> View Projects
+                <Code className="w-4 h-4" /> View Projects
               </button>
             </div>
           </div>
