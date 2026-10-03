@@ -116,7 +116,7 @@ const StatCard = memo(({ icon: Icon, color, value, label, description, animation
 const AboutPage = () => {
   // Memoized calculations
   const [stats, setStats] = useState({
-    totalProjects: 3,
+    totalProjects: 5,
     totalCertificates: 12,
     YearExperience: 1,
   });
@@ -131,7 +131,7 @@ const AboutPage = () => {
       const experience = Math.max(1, today.getFullYear() - startDate.getFullYear());
 
       setStats({
-        totalProjects: storedProjects.length > 0 ? storedProjects.length : 3,
+        totalProjects: storedProjects.length > 0 ? storedProjects.length : 5,
         totalCertificates: storedCertificates.length > 0 ? storedCertificates.length : 12,
         YearExperience: experience
       });

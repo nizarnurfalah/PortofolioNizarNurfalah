@@ -305,7 +305,7 @@ export default function FullWidthTabs() {
             />
             <Tab
               icon={<Code className="mb-1 w-5 h-5 transition-all duration-300" />}
-              label="Web Projects (3)"
+              label={`Web Projects (${projects.length})`}
               {...a11yProps(2)}
             />
             <Tab

@@ -45,6 +45,36 @@ export const INITIAL_PROJECTS = [
       "Publikasi Acara Seni & Pertunjukan Budaya",
       "Antarmuka Modern dengan Navigasi User-Friendly"
     ]
+  },
+  {
+    id: "pancaran-radius-microwave",
+    Title: "WebGIS Pemetaan Radius & Transmisi Microwave Tower BTS",
+    Description: "Sistem Informasi Geografis (WebGIS) pemetaan jarak, radius transmisi gelombang mikro (microwave) antar tower BTS, dan kalkulator analisis Fresnel Zone.",
+    Img: `${BASE}images/Thumnail tower.jpg`,
+    Link: "https://nizarnurfalah.github.io/pancaranradius_microwave/",
+    Github: "https://github.com/nizarnurfalah/pancaranradius_microwave",
+    TechStack: ["Leaflet", "JavaScript", "HTML", "Bootstrap", "GIS & Telecom"],
+    Features: [
+      "Kalkulator Fresnel Zone & Analisis Link Microwave",
+      "Visualisasi Multi-Radius Antena & Marker BTS Interaktif",
+      "Uji Titik Dalam Radius & Geolokasi Tower Terdekat",
+      "Multi-Role Switcher (Admin, Operator, Guest)"
+    ]
+  },
+  {
+    id: "pemetaan-laporan-fasilitas",
+    Title: "WebGIS Pemetaan & Pengaduan Fasilitas Publik",
+    Description: "Platform WebGIS interaktif pelaporan dan pemetaan kerusakan fasilitas publik (jalan, lampu PJU, drainase, jembatan) lengkap dengan sistem tracking status dan panel admin.",
+    Img: `${BASE}images/Thumnail laporan (1).jpg`,
+    Link: "https://nizarnurfalah.github.io/pemetaan-laporan-fasilitas/",
+    Github: "https://github.com/nizarnurfalah/pemetaan-laporan-fasilitas",
+    TechStack: ["Leaflet", "JavaScript", "HTML", "Bootstrap", "WebGIS"],
+    Features: [
+      "Peta Interaktif Titik Kerusakan & Pemfilteran Kategori",
+      "Formulir Pelaporan Interaktif dengan Fitur Pin Lokasi Peta",
+      "Pelacakan Status Penanganan Laporan Real-Time",
+      "Panel Manajemen Admin & Statistik Kerusakan Fasilitas"
+    ]
   }
 ];
 
