@@ -91,8 +91,8 @@ const SocialLink = memo(({ icon: Icon, link, label }) => (
 const TYPING_SPEED = 100;
 const ERASING_SPEED = 50;
 const PAUSE_DURATION = 2000;
-const WORDS = ["Web Developer", "Creative Media"];
-const TECH_STACK = ["WebGIS", "AutoCAD", "Creative Media", "React", "Laravel"];
+const WORDS = ["WebGIS & Frontend Developer", "GIS Spasial & Web Specialist", "AutoCAD Drafter & Creative Media"];
+const TECH_STACK = ["WebGIS", "Leaflet.js", "React.js", "AutoCAD", "Tailwind CSS"];
 const SOCIAL_LINKS = [
   { icon: Github, link: "https://github.com/nizarnurfalah", label: "GitHub Profile" },
   { icon: Linkedin, link: "https://www.linkedin.com/in/muhamad-nizar-nurfalah-6b1011440?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "LinkedIn Profile" },
@@ -155,18 +155,18 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Muhamad Nizar Nurfalah — Web Developer & Creative Media</title>
-        <meta name="description" content="Portofolio resmi Muhamad Nizar Nurfalah, Web Developer & Creative Media. Lulusan S1 Sistem Informasi STMIK AMIK Bandung dengan fokus pada pengembangan web dan Sistem Informasi Geografis (WebGIS)." />
+        <title>Muhamad Nizar Nurfalah — WebGIS & Frontend Developer</title>
+        <meta name="description" content="Portofolio resmi Muhamad Nizar Nurfalah, WebGIS & Frontend Developer. Lulusan S1 Sistem Informasi STMIK AMIK Bandung dengan fokus pada pengembangan web interaktif, Sistem Informasi Geografis (WebGIS), dan AutoCAD Drafting." />
      <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Muhamad Nizar Nurfalah — Web Developer & Creative Media" />
-     <meta property="og:description" content="Portofolio resmi Muhamad Nizar Nurfalah, Web Developer & Creative Media." />
+        <meta property="og:title" content="Muhamad Nizar Nurfalah — WebGIS & Frontend Developer" />
+     <meta property="og:description" content="Portofolio resmi Muhamad Nizar Nurfalah, WebGIS & Frontend Developer." />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{`
           {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Muhamad Nizar Nurfalah",
-            "jobTitle": "Web Developer & Creative Media",
+            "jobTitle": "WebGIS & Frontend Developer",
             "sameAs": [
               "https://github.com/nizarnurfalah",
               "https://www.linkedin.com/in/muhamad-nizar-nurfalah-6b1011440?utm_source=share_via&utm_content=profile&utm_medium=member_android",

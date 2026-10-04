@@ -3,27 +3,57 @@ const BASE = import.meta.env.BASE_URL;
 export const INITIAL_PROJECTS = [
   {
     id: "webgis-longsor-kuningan",
-    Title: "WebGIS Pemetaan Rawan Longsor Kabupaten Kuningan",
-    Description: "Sistem Informasi Geografis (WebGIS) interaktif berbasis web untuk pemetaan, analisis zonasi kerawanan, dan visualisasi spasial bencana longsor di Kabupaten Kuningan.",
+    Title: "WebGIS Analisis & Pemetaan Kerawanan Longsor Kabupaten Kuningan (Skripsi)",
+    Description: "Studi kasus spasial mitigasi bencana longsor lereng Gn. Ciremai berbasis metode Weighted Overlay & Skoring multi-parameter (DEMNAS BIG 8.25m, Curah Hujan CHIRPS, Peta Geologi & Tanah BAPPEDA, Tutupan Lahan BIG) dengan validasi data BPBD Kuningan (2021–2025). Mengidentifikasi 5 zona kerawanan dengan konsentrasi risiko tertinggi di Cigugur, Jalaksana, Darma, Mandirancan, dan Cilebak.",
     Img: `${BASE}images/thumbnail project 1.jpg`,
     Link: "https://nizarnurfalah.github.io/webgis_longsor_kuningan/",
     Github: "https://github.com/nizarnurfalah/webgis_longsor_kuningan",
-    TechStack: ["Leaflet", "JavaScript", "HTML", "CSS", "WebGIS"],
+    TechStack: ["Leaflet", "JavaScript", "Spatial Analysis", "GeoJSON", "Bootstrap"],
     Features: [
-      "Peta Interaktif Spasial Zonasi Rawan Longsor",
-      "Layering Multi-Kategori & Legenda Informasi Geografis",
-      "Detail Wilayah & Analisis Parameter Kerawanan Spasial",
-      "Performa Cepat & Responsif Siap Akses Publik"
+      "Analisis Spasial Multi-Parameter (DEMNAS, CHIRPS, Tanah, Geologi, Tutupan Lahan)",
+      "Zonasi 5 Tingkat Kerawanan dengan Klasifikasi Weighted Overlay",
+      "Validasi Data Historis Bencana BPBD Kab. Kuningan (2021–2025)",
+      "Peta Interaktif Spasial Leaflet.js dengan Layering Dinamis & Legenda"
+    ]
+  },
+  {
+    id: "pancaran-radius-microwave",
+    Title: "WebGIS Simulasi & Prediksi Radius Pancaran Microwave Tower BTS",
+    Description: "Aplikasi web simulasi mandiri untuk estimasi dan prediksi radius jangkauan pancaran sinyal antena gelombang mikro (microwave) serta visualisasi jarak antar tower BTS untuk kebutuhan perencanaan jaringan.",
+    Img: `${BASE}images/Thumnail tower.jpg`,
+    Link: "https://nizarnurfalah.github.io/pancaranradius_microwave/",
+    Github: "https://github.com/nizarnurfalah/pancaranradius_microwave",
+    TechStack: ["Leaflet", "JavaScript", "HTML5", "Bootstrap", "Telecom GIS"],
+    Features: [
+      "Simulasi Prediksi Radius Jangkauan Gelombang Mikro Antena",
+      "Visualisasi Jarak & Interkoneksi Spasial Antar Titik Tower BTS",
+      "Uji Titik Lokasi Dalam Radius & Deteksi Tower Terdekat",
+      "Antarmuka Interaktif Berbasis Peta Leaflet.js"
+    ]
+  },
+  {
+    id: "pemetaan-laporan-fasilitas",
+    Title: "WebGIS Sistem Pelaporan & Pemetaan Fasilitas Publik",
+    Description: "Platform WebGIS interaktif pelaporan dan pemetaan titik kerusakan fasilitas publik (jalan, lampu PJU, drainase, jembatan). Versi live demo GitHub Pages dioptimalkan menggunakan client-side mock data dari sistem aslinya.",
+    Img: `${BASE}images/Thumnail laporan (1).jpg`,
+    Link: "https://nizarnurfalah.github.io/pemetaan-laporan-fasilitas/",
+    Github: "https://github.com/nizarnurfalah/pemetaan-laporan-fasilitas",
+    TechStack: ["Leaflet", "JavaScript", "HTML5", "Bootstrap", "WebGIS"],
+    Features: [
+      "Pin Point Lokasi & Pemetaan Spasial Titik Kerusakan Fasilitas",
+      "Kategorisasi & Filter Status Penanganan Laporan",
+      "Form Pengaduan Interaktif dengan Input Koordinat Otomatis",
+      "Dashboard Admin & Ringkasan Data Kerusakan Fasilitas"
     ]
   },
   {
     id: "perhitungan-pipa",
     Title: "Aplikasi Kalkulator Perhitungan Pipa Teknis",
-    Description: "Aplikasi simulasi dan kalkulator teknik berbasis web untuk menghitung dimensi pipa, kecepatan laju aliran fluida, serta analisis kerugian tekanan (headloss).",
+    Description: "Aplikasi simulasi dan kalkulator teknik berbasis web untuk menghitung estimasi dimensi pipa, kecepatan laju aliran fluida, serta analisis kerugian tekanan (headloss).",
     Img: `${BASE}images/thumbnail project 2.jpg`,
     Link: "https://nizarnurfalah.github.io/PerhitunganPipa/",
     Github: "https://github.com/nizarnurfalah/PerhitunganPipa",
-    TechStack: ["JavaScript", "HTML", "CSS", "Engineering Tools"],
+    TechStack: ["JavaScript", "HTML5", "CSS3", "Engineering Tools"],
     Features: [
       "Kalkulasi Otomatis Dimensi & Debit Aliran Pipa",
       "Perhitungan Headloss & Parameter Teknis Fluida",
@@ -33,47 +63,17 @@ export const INITIAL_PROJECTS = [
   },
   {
     id: "jadwal-theater-unisba",
-    Title: "Website Jadwal & Informasi Teater Unisba",
-    Description: "Platform web interaktif informasi jadwal pementasan teater Unisba, katalog pertunjukan seni, pendaftaran acara, serta rincian kegiatan teater.",
+    Title: "Website Jadwal & Katalog Informasi Teater Unisba",
+    Description: "Platform web interaktif katalog pertunjukan seni budaya, jadwal pementasan teater Unisba, dan publikasi agenda kegiatan kreatif mahasiswa.",
     Img: `${BASE}images/thumbnail project 3.jpg`,
     Link: "https://nizarnurfalah.github.io/jadwaltheaterunisba/",
     Github: "https://github.com/nizarnurfalah/jadwaltheaterunisba",
-    TechStack: ["JavaScript", "HTML", "CSS", "Bootstrap", "Web App"],
+    TechStack: ["JavaScript", "HTML5", "CSS3", "Bootstrap", "Web App"],
     Features: [
       "Katalog & Informasi Jadwal Pementasan Teater Unisba",
       "Desain Responsif & Interaktif Siap Akses Publik",
       "Publikasi Acara Seni & Pertunjukan Budaya",
       "Antarmuka Modern dengan Navigasi User-Friendly"
-    ]
-  },
-  {
-    id: "pancaran-radius-microwave",
-    Title: "WebGIS Pemetaan Radius & Transmisi Microwave Tower BTS",
-    Description: "Sistem Informasi Geografis (WebGIS) pemetaan jarak, radius transmisi gelombang mikro (microwave) antar tower BTS, dan kalkulator analisis Fresnel Zone.",
-    Img: `${BASE}images/Thumnail tower.jpg`,
-    Link: "https://nizarnurfalah.github.io/pancaranradius_microwave/",
-    Github: "https://github.com/nizarnurfalah/pancaranradius_microwave",
-    TechStack: ["Leaflet", "JavaScript", "HTML", "Bootstrap", "GIS & Telecom"],
-    Features: [
-      "Kalkulator Fresnel Zone & Analisis Link Microwave",
-      "Visualisasi Multi-Radius Antena & Marker BTS Interaktif",
-      "Uji Titik Dalam Radius & Geolokasi Tower Terdekat",
-      "Multi-Role Switcher (Admin, Operator, Guest)"
-    ]
-  },
-  {
-    id: "pemetaan-laporan-fasilitas",
-    Title: "WebGIS Pemetaan & Pengaduan Fasilitas Publik",
-    Description: "Platform WebGIS interaktif pelaporan dan pemetaan kerusakan fasilitas publik (jalan, lampu PJU, drainase, jembatan) lengkap dengan sistem tracking status dan panel admin.",
-    Img: `${BASE}images/Thumnail laporan (1).jpg`,
-    Link: "https://nizarnurfalah.github.io/pemetaan-laporan-fasilitas/",
-    Github: "https://github.com/nizarnurfalah/pemetaan-laporan-fasilitas",
-    TechStack: ["Leaflet", "JavaScript", "HTML", "Bootstrap", "WebGIS"],
-    Features: [
-      "Peta Interaktif Titik Kerusakan & Pemfilteran Kategori",
-      "Formulir Pelaporan Interaktif dengan Fitur Pin Lokasi Peta",
-      "Pelacakan Status Penanganan Laporan Real-Time",
-      "Panel Manajemen Admin & Statistik Kerusakan Fasilitas"
     ]
   }
 ];

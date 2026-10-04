@@ -238,7 +238,7 @@ const AboutPage = () => {
               data-aos="fade-right"
               data-aos-duration="1500"
             >
-        Lulusan S1 Sistem Informasi STMIK AMIK Bandung dengan fokus pada pengembangan web dan Sistem Informasi Geografis (WebGIS). Berpengalaman magang ±10 bulan di Diskominfo Kota Bandung dan PT Nexwave, mencakup pengembangan tampilan web, publikasi konten pada portal resmi, dan pengelolaan dokumen teknis.
+        Lulusan S1 Sistem Informasi STMIK AMIK Bandung dengan spesialisasi pengembangan WebGIS dan Frontend interaktif. Berpengalaman magang ±10 bulan di Diskominfo Kota Bandung dan PT Nexwave, mencakup perancangan aplikasi pemetaan spasial, penyusunan berkas gambar teknik AutoCAD telekomunikasi (Indosat & XL), serta publikasi warta berita dan konten media kreatif.
                   </p>
 
                {/* Quote Section */}
